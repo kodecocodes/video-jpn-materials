@@ -33,7 +33,7 @@
   ~ THE SOFTWARE.
   -->
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-  android:initialLayout="@layout/authoizeme_appwidget"
+  android:initialLayout="@layout/authorizeme_appwidget"
   android:minWidth="110dp"
   android:minHeight="40dp"
   android:updatePeriodMillis="0" />

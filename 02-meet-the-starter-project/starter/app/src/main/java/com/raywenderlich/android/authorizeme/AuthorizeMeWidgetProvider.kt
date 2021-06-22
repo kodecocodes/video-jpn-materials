@@ -51,7 +51,7 @@ class AuthorizeMeWidgetProvider : AppWidgetProvider() {
   ) {
     val remoteViews = RemoteViews(
         context.packageName,
-        R.layout.authoizeme_appwidget
+        R.layout.authorizeme_appwidget
     )
 
     val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"))
