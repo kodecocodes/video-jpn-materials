@@ -1,0 +1,2 @@
+rootProject.name='AuthorizeMe'
+include ':app'

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/mainFragment">
+
+  <action
+    android:id="@+id/actionWelcome"
+    app:destination="@id/welcomeFragment"
+    app:enterAnim="@anim/slide_in_right"
+    app:exitAnim="@anim/slide_out_left"
+    app:popEnterAnim="@anim/slide_in_left"
+    app:popExitAnim="@anim/slide_out_right" />
+
+  <fragment
+    android:id="@+id/mainFragment"
+    android:name="com.raywenderlich.android.authorizeme.MainFragment"
+    android:label="fragment_main"
+    tools:layout="@layout/fragment_main" >
+    <action
+      android:id="@+id/actionLogin"
+      app:destination="@id/loginFragment" />
+    <action
+      android:id="@+id/actionSignUp"
+      app:destination="@id/signUpFragment" />
+  </fragment>
+  <fragment
+    android:id="@+id/loginFragment"
+    android:name="com.raywenderlich.android.authorizeme.login.LoginFragment"
+    android:label="fragment_login"
+    tools:layout="@layout/fragment_login" >
+  </fragment>
+  <fragment
+    android:id="@+id/signUpFragment"
+    android:name="com.raywenderlich.android.authorizeme.signup.SignUpFragment"
+    android:label="fragment_signup"
+    tools:layout="@layout/fragment_signup" >
+  </fragment>
+  <fragment
+    android:id="@+id/welcomeFragment"
+    android:name="com.raywenderlich.android.authorizeme.welcome.WelcomeFragment"
+    android:label="fragment_welcome"
+    tools:layout="@layout/fragment_welcome" >
+    <argument
+      android:name="param1"
+      app:argType="string"
+      android:defaultValue="Param1" />
+    <argument
+      android:name="param2"
+      app:argType="string"
+      android:defaultValue="Param2" />
+  </fragment>
+</navigation>
